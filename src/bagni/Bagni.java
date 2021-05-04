@@ -6,7 +6,10 @@
 package bagni;
 import java.util.concurrent.Semaphore;
 /**
- *
+ *<h2>Main</h2>
+ * Nel main vengono create 2 istanze di semaforo e 2 istanze di bagno (una per genere)
+ * e 3 istanze di persona per ogni genere. Vengono lanciati tutti i thread ed in modo concorrente
+ * utilizzeranno i bagni corrispettivi.
  * @author informatica
  */
 public class Bagni {

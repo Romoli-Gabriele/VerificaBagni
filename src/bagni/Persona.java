@@ -9,7 +9,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ *<h2>Persona<h2>
+ * 
+ * la classe persona è una estensione di thread e rappresenta le persone che devono utilizzare
+ * il bagno corrispettivo al loro genere.
+ * tutte le persone hanno un nome per distinguersi tra loro, un genere e entrambi i bagni
+ * 
  * @author informatica
  */
 public class Persona extends Thread{
@@ -28,6 +33,10 @@ public class Persona extends Thread{
     
     @Override
     public void run() {
+        /**
+         * il metodo run controlla il genere della persona e la mette in coda al corrispettivo bagno,
+         * dopo averlo utilizzato lo rilascia alla prossima persona
+         */
         
         if("uomini".equals(genere)){//se è un uomo va nel bagno degli uomini
             try {
